@@ -1,0 +1,11 @@
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+{% if site.twitter %}<meta name="twitter:site" content="@{{ site.twitter }}">{% endif %}
+{% if author.twitter %}<meta name="twitter:creator" content="@{{ author.twitter }}">{% endif %}
+{% if page.image.feature %}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ site.baseurl | prepend: site.url }}/images/{{ page.image.feature }}">
+{% else %}
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="{% if page.image.thumb %}{{ site.baseurl | prepend: site.url }}/images/{{ page.image.thumb }}{% else %}{{ site.baseurl | prepend: site.url }}/images/{{ site.logo }}{% endif %}">
+{% endif %}

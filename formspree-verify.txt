@@ -1,0 +1,6 @@
+---
+sitemap: exclude
+search: exclude
+---
+
+{{ site.email }}

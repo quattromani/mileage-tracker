@@ -1,0 +1,43 @@
+// Colors
+$color-white: #fff;
+$color-off-white: #fafafa;
+$color-black: #000;
+$color-grey: #999;
+$color-light-light-grey: #f0f0f0;
+$color-light-grey: #e1e1e1;
+$color-dark-grey: #37474f;
+
+// Brand Palette
+$color-brand-primary: #e91e63; // Turquise
+$color-brand-secondary: #767676; // Text
+$color-brand-tertiary: $color-white; // Background
+$color-brand-quaternary: #e0f7fa; // Creme
+$color-brand-quinary: #5d7876; // Aqua
+$color-brand-senary: #daad53; // Gold
+$color-brand-septenary: $color-grey; // Dark Grey
+
+$color-brand-primary-complimentary: $color-brand-primary; // Qoppa Red
+$color-brand-secondary-complimentary: #484b4d;
+$color-brand-tertiary-complimentary: $color-brand-tertiary;
+$color-brand-quaternary-complimentary:  #18ffff; // Dark Brown
+$color-brand-quinary-complimentary: $color-brand-quinary;
+$color-brand-senary-complimentary: $color-brand-senary; // Slate
+$color-brand-septenary-complimentary: $color-brand-septenary; // Moss Brown
+
+$color-brand-primary-alternate: mix(white, $color-brand-primary, 25%);
+
+$color-primary-red: red;
+$color-primary-green: green;
+$color-primary-blue: blue;
+
+// Default Text Colors
+$base-font-color: $color-brand-secondary;
+$base-accent-color: $color-brand-tertiary;
+
+// Supplementary Colors
+$alert-bg: #c72626;
+$alert-color: $alert-bg;
+$success-bg: mix($color-primary-green, white, 40%);
+$success-color: $color-primary-green;
+$info-bg: mix($color-primary-blue, white, 40%);
+$info-color: $color-primary-blue;

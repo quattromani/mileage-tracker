@@ -1,0 +1,59 @@
+// This file contains all the very common settings among sites.
+// These are purely defaults and should not be reset unless
+// a change is requested across all sites.
+
+@import "spacing-vars",
+
+        "width-vars",
+
+        "global-vars",
+
+        "animation-vars",
+
+				"color-vars",
+
+				"typography-vars",
+
+        "heading-vars",
+
+        "body-vars",
+
+        "link-vars",
+
+        "icon-vars",
+
+        "border-vars",
+
+        "button-vars",
+
+        "cta-vars",
+
+        "header-vars",
+
+        "nav-vars",
+
+        "footer-vars",
+
+				"form-vars",
+
+        "hr-vars",
+
+				"image-vars",
+
+        "logo-vars",
+
+        "list-vars",
+
+				"search-vars",
+
+        "setting-vars",
+
+        "slick-vars",
+
+        "social-vars",
+
+        "tab-vars",
+
+        "table-vars",
+
+        "transition-vars";

@@ -1,0 +1,7 @@
+# Add that trailing slash to avoid redirect
+- name: Terms
+  url: /terms-and-conditions/
+- name: Privacy
+  url: /privacy-policy/
+- name: Sitemap
+  url: /sitemap/

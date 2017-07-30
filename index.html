@@ -1,0 +1,40 @@
+---
+layout: home
+title: Home
+permalink: "/"
+class: home
+description: {{ site.description }}
+---
+
+<div class="form-container">
+  <form id="mileage">
+    <label class="visually-hidden">Mileage</label>
+    <input id="mileage" name="mileage" type="number" placeholder="Enter Current Mileage">
+    <button type="submit"><i class="fa fa-fw fa-plus"></i></button>
+  </form>
+
+  <div class="progress">
+    <div class="progress-bar"></div>
+    <span class="day-tracker"></span>
+  </div>
+</div>
+
+<dl>
+  <dt>Vehicle</dt>
+  <dd class="vehicle-info"></dd>
+  <dt>Lease Term</dt>
+  <dd class="term"></dd>
+  <dt>Lease Term Dates</dt>
+  <dd class="term-dates"></dd>
+  <dt>Last Mileage</dt>
+  <dd class="current-miles"></dd>
+  <dt>Starting Mileage</dt>
+  <dd class="start-miles"></dd>
+  <dt>Miles/Year</dt>
+  <dd class="yearly-miles"></dd>
+  <dt>Final Mileage</dt>
+  <dd class="final-miles"></dd>
+</dl>
+
+<div class="date-holder">As of: <span class="date"></span></div>
+

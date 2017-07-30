@@ -1,0 +1,75 @@
+---
+layout: default
+title: Style Guide
+description: "A virtual brand guideline of all the high-level desicions made when designing and developing components for my site."
+class: styleguide
+parent: Style Guide
+sitemap: exclude
+search: exclude
+---
+
+<article role="article">
+
+  <div class="row">
+    <div class="menu">
+      <h2>Menu</h2>
+      <div class="box-column">
+        <ul>
+          <li>
+            <a href="#about-anchor">About</a>
+          </li>
+          <li>
+            <a href="#colors-anchor">Colors</a>
+          </li>
+          <li>
+            <a href="#typography-anchor">Typography</a>
+          </li>
+          <li>
+            <a href="#buttons-anchor">Buttons</a>
+          </li>
+          <li>
+            <a href="#grid-anchor">Grid</a>
+          </li>
+          <li>
+            <a href="#images-anchor">Images</a>
+          </li>
+          <li>
+            <a href="#video-anchor">Video</a>
+          </li>
+          <li>
+            <a href="#audio-anchor">Audio</a>
+          </li>
+          <li>
+            <a href="#bestPractices-anchor">Best Practices</a>
+          </li>
+        </ul>
+      </div>
+      <div class="box-column">
+        <a href="/patterns">Pattern Library <span class="fa fa-angle-right"></span></a>
+      </div>
+    </div>
+    <div>
+
+      <!-- Loop through and include all styleguide sections -->
+      {% include styleguide/about/index.html %}
+      {% include styleguide/colors/index.html %}
+      {% include styleguide/typography/index.html %}
+      {% include styleguide/buttons/index.html %}
+      {% include styleguide/grid/index.html %}
+      {% include styleguide/images/index.html %}
+      {% include styleguide/video/index.html %}
+      {% include styleguide/audio/index.html %}
+      {% include styleguide/best_practices/index.html %}
+
+      <header>
+        <a href="https://twitter.com/maxquattromani"><h2>Follow Me <i class="fa fa-twitter"></i></h2></a>
+      </header>
+
+      <p>Version: {{site.version }} -- Updated: {{ site.time }}</p>
+
+      <strong>FIN.</strong>
+
+    </div>
+  </div>
+
+</article>

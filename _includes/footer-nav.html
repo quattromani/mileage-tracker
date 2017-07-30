@@ -1,0 +1,9 @@
+<nav role="navigation" aria-label="Footer Navigation">
+  <ul role="menubar" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+    {% for nav in site.data.footer-nav %}
+    <li role="menuitem" itemprop="name">
+      <a href="{{ nav.url | prepend: site.baseurl }}" itemprop="url">{{ nav.name }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

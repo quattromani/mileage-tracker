@@ -1,0 +1,17 @@
+{
+  "lang": "en-US",
+  "short_name": "tracker",
+  "name": "Mileage Tracker",
+  "description": "",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "images/icons/android-chrome-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+---
+layout: null
+sitemap: exclude
+search: exclude
+---
+
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Max Quattromani - Developer - @maxquattromani
+
+# THANKS
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery

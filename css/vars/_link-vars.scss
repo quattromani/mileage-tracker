@@ -1,0 +1,32 @@
+// Links
+$base-link-bg: null;
+$base-link-font-family: $base-font-family;
+$base-link-color: $color-brand-primary;
+$base-link-color-hover: $color-brand-primary-complimentary;
+$base-link-color-alt: $base-link-color;
+$base-link-color-alt-hover: $base-link-color-hover;
+$base-link-font-weight: 200;
+$base-link-text-decoration: none;
+$base-link-text-decoration-hover: false; // underline, overline, line-through
+
+// External Links
+$link-external-color: $base-link-color;
+$link-external-color-hover: $base-link-color-hover;
+
+// Email Links
+$email-link-color: $base-link-color;
+$email-link-color-hover: $base-link-color-hover;
+$email-link-font-weight: $base-link-font-weight;
+$email-link-text-decoration: $base-font-color;
+
+// Phone Links
+$phone-link-color: $color-brand-quinary;
+$phone-link-color-hover: mix($base-link-color, black, 10%);
+$phone-link-font-weight: $base-link-font-weight;
+$phone-link-text-decoration: none;
+
+// Anchor links
+$anchor-link-color: $base-link-color;
+$anchor-link-color-hover: $base-link-color-hover;
+$anchor-link-font-weight: $base-link-font-weight;
+$anchor-link-text-decoration: $base-link-text-decoration;

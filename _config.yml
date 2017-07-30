@@ -1,0 +1,86 @@
+# Site settings
+title: Mileage Tracker
+email:
+url: https://mileage-tracker.com
+enforce_ssl: mileage-tracker.com
+description:
+baseurl:
+logo: "logo.svg"
+version: 0.0.1
+url: ""
+author: "Max Quattromani"
+
+# Build settings
+jquery-version: 3.1.1
+fontawesome-id: 4aa71f0649
+
+# Included Plugins (previously gems)
+plugins: [jekyll-admin, jekyll-paginate]
+
+# Writing
+markdown: kramdown
+kramdown:
+  input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
+  hard_wrap: false
+
+highlighter: rouge
+
+# Use pages inside the /_pages folder
+include: ['_pages']
+
+# remove unnecessary strings from URLs
+permalink: /:title/
+
+# When pagination is required, set intervals
+paginate: 5
+
+# Don't include in the build
+exclude: ['node_modules']
+
+# Googles
+google-verify:
+google-analytics: false
+google-analytics-id: UA-xxxxxxxx
+google-maps-javascript-api-key:
+
+# Page-type Defaults
+defaults:
+-
+  scope:
+    path: ""
+    type: "posts"
+  values:
+    layout: "post"
+
+-
+  scope:
+    path: ""
+    type: "pages"
+  values:
+    layout: "default"
+
+# Phyical Attributes
+map:
+  address: ''
+  city: ''
+  state: ''
+  zip: ''
+  latitude: ''
+  longitude: ''
+
+phone: ''
+
+# formspree
+formspree-verify: xzdyqvax
+
+# Socials
+social:
+  facebook:
+  twitter:
+  linkedin:
+  snapchat:
+  github:
+  disqus:
+
+# Turn this to "false" for launch
+in-dev: true

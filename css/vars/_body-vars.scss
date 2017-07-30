@@ -1,0 +1,27 @@
+// Root
+$root-background-color: $color-dark-grey;
+$root-box-sizing: border-box;
+$root-color: $color-brand-secondary;
+$root-cursor: default;
+$root-font-size: $base-font-reset;
+$root-font-family: $base-font-family;
+$root-font-weight: 200;
+
+$html-height: 100%;
+$html-body-overflow: hidden;
+
+// Site
+$site-bg: $color-off-white;
+$site-bg-start: $site-bg;
+$site-bg-end: $site-bg;
+$site-background-attachment: null; // 'fixed, local, inherit, or null'
+
+// Body
+$body-bg: $site-bg;
+$body-pattern: null;
+$body-pattern-position: null;
+$body-gradient-start: #434343;
+$body-gradient-end: #1a1a1a;
+$body-pattern-repeat: repeat;
+$body-section-bg: $color-white;
+$body-gradient: false;

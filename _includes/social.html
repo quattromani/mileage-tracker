@@ -1,0 +1,8 @@
+<ul class="footer-social" itemscope itemtype="http://schema.org/Organization">
+  <link itemprop="url" href="{{ site.url }}">
+  {% for social in site.data.socials %}
+  <li>
+    <a itemprop="sameAs" href="{{ social.url }}{{ social.username }}/" target="_blank" rel="noopener noreferrer" title="Visit us on {{ social.name }}" aria-label="{{ social.name }}"><i class="fa fa-{{ social.name | downcase }} fa-2x" aria-hidden="true"></i></a>
+  </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,17 @@
+// Buttons
+$base-button-bg: $color-brand-primary;
+$base-button-bg-hover: $color-brand-primary-complimentary;
+$base-button-color: $color-white;
+$base-button-color-hover: $color-white;
+$base-button-padding-t-b: $three-fourths-spacing;
+$base-button-padding-l-r: $three-fourths-spacing;
+$base-button-border-radius: 0;
+$base-button-font-family: $base-font-family;
+$base-button-font-size: $base-font-size;
+$base-button-font-weight: 700;
+$base-button-text-transform: uppercase;
+$base-button-letter-spacing: .05em;
+$base-button-focus-bg: $base-button-bg-hover;
+$base-button-disabled-bg: grey;
+
+$base-button-text-decoration-hover: none;

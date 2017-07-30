@@ -1,0 +1,50 @@
+// Headings
+$heading-font-family: $base-font-family-alt;
+$heading-font-family-alt: $base-font-family;
+$heading-color-primary: $color-brand-secondary;
+$heading-color-secondary: $color-brand-primary;
+$heading-line-height: 1;
+
+$h1: 38;
+$h1-tablet: 32px;
+$h1-mobile: 34px;
+$h1-color: $heading-color-primary;
+$h1-letter-spacing: .1em;
+$h1-text-transform: uppercase;
+
+$h2: 26;
+$h2-tablet: 36px;
+$h2-mobile: 34px;
+$h2-color: $heading-color-primary;
+$h2-letter-spacing: .05em;
+$h2-text-transform: uppercase;
+
+$h3: 22;
+$h3-tablet: 32px;
+$h3-mobile: 30px;
+$h3-color: $heading-color-primary;
+$h3-letter-spacing: .05em;
+$h3-text-transform: uppercase;
+
+$h4: 22;
+$h4-tablet: 28px;
+$h4-mobile: 24px;
+$h4-color: $heading-color-secondary;
+$h4-letter-spacing: 0;
+$h4-text-transform: uppercase;
+
+$h5: 20px;
+$h5-tablet: 18px;
+$h5-mobile: 20px;
+$h5-color: $heading-color-secondary;
+$h5-font-weight: 200;
+$h5-letter-spacing: 0;
+$h5-text-transform: none;
+
+$h6: 18px;
+$h6-tablet: 18px;
+$h6-mobile: 18px;
+$h6-color: $heading-color-secondary;
+$h6-font-weight: 200;
+$h6-letter-spacing: 0;
+$h6-text-transform: none;

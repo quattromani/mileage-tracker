@@ -1,0 +1,15 @@
+- name: 'Facebook'
+  url: 'https://www.facebook.com/'
+  username: ''
+
+- name: 'Twitter'
+  url: 'https://twitter.com/'
+  username: ''
+
+- name: 'LinkedIn'
+  url: 'https://www.linkedin.com/company/'
+  username: ''
+
+- name: 'Instagram'
+  url: 'https://www.instagram.com/'
+  username: ''

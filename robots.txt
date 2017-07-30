@@ -1,0 +1,12 @@
+---
+layout: null
+sitemap: exclude
+search: exclude
+---
+
+# www.robotstxt.org/
+
+# Allow crawling of all content
+User-agent: *
+Sitemap: {{ site.baseurl | prepend: site.url }}/sitemap.xml
+Disallow:

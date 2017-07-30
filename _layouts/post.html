@@ -1,0 +1,59 @@
+---
+layout: compress
+class: post
+comments: true
+publisher: {{ site.title }}
+---
+
+{% include head.html %}
+
+<header>
+  <h1>{{ page.title }}</h1>
+  {% if page.subtitle != null %}
+  <h3>{{ page.subtitle }}</h3>
+  {% endif %}
+  <strong>
+    Posted: <time datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
+  </strong>
+  <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include reading-time.html %}</p>
+</header>
+
+<article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+  {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+  {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+  {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
+  {% if page.modified %}<meta itemprop="dateModified" content="{{ page.modified | date: "%B %d, %Y" }}">{% endif %}
+
+  <p>{{ page.categories | join: ', ' | capitalize}}</p>
+
+  <section itemprop="text">
+    {{ content }}
+  </section>
+
+</article>
+
+{% if page.categories and page.categories != empty %}
+{% include breadcrumbs.html %}
+{% endif %}
+
+<nav class="pagination">
+  {% if paginator.next_page %}
+  <a class="newer-posts" href="{{ site.baseurl }}/page{{paginator.next_page}}">&larr; Older posts</a>
+  {% else %}
+  <a class="newer-posts disabled">&larr; Older posts</a>
+  {% endif %}
+  <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.previous_page %}
+  {% if paginator.page == 2 %}
+  <a class="older-posts" href="{{ site.baseurl }}/">Newer posts &rarr;</a>
+  {% else %}
+  <a class="older-posts" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer posts &rarr;</a>
+  {% endif %}
+  {% else %}
+  <a class="older-posts disabled">Newer posts &rarr;</a>
+  {% endif %}
+</nav>
+
+
+{% include footer.html %}
+{% include foot.html %}

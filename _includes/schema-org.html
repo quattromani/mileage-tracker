@@ -1,0 +1,27 @@
+<script type='application/ld+json'>
+{
+  "@context": "http://www.schema.org",
+  "@type": "ProfessionalService",
+  "name": "{{ site.title }}",
+  "url": "{{ site.url }}",
+  "logo": "{{ site.url }}/images/{{ site.logo }}",
+  "description": "{{ site.description }}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "{{ site.map.address }}",
+    "addressLocality": "{{ site.map.city }}",
+    "addressRegion": "{{ site.map.state }}",
+    "postalCode": "{{ site.map.zip }}"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "{{ site.map.latitude }}",
+    "longitude": "{{ site.map.longitude }}"
+  },
+  "openingHours": "Mo, Tu, We, Th, Fr 08:00-17:00",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "{{ site.phone }}"
+  }
+}
+ </script>
