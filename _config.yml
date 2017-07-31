@@ -4,7 +4,7 @@ email:
 url: https://mileage-tracker.com
 enforce_ssl: mileage-tracker.com
 description: A simple mileage tracker for leased vehicles
-baseurl:
+baseurl: ""
 logo: "logo.svg"
 version: 0.0.1
 url: ""
