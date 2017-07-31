@@ -2,7 +2,7 @@
   "lang": "en-US",
   "short_name": "tracker",
   "name": "Mileage Tracker",
-  "description": "",
+  "description": "A simple mileage tracker for leased vehicles",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#37474f",
