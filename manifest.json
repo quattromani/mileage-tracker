@@ -2,22 +2,23 @@
 layout: null
 sitemap: exclude
 search: exclude
+permalink: manifest.json
 ---
 
 {
-  "lang": "en-US",
-  "short_name": "tracker",
-  "name": "Mileage Tracker",
+  "lang": "{{ site.manifest_lang }}",
+  "name": "{{ site.manifest_name }}",
+  "short_name": "{{ site.manifest_short_name }}",
   "description": "A simple mileage tracker for leased vehicles",
   "start_url": "/",
-  "display": "standalone",
-  "orientation": "portrait",
-  "background_color": "#37474f",
-  "theme_color": "#37474f",
+  "display": "{{ site.manifest_display }}",
+  "orientation": "{{ site.manifest_orientation }}",
+  "background_color": "#{{ site.manifest_background_color }}",
+  "theme_color": "#{{ site.manifest_theme_color }}",
   "icons": [
     {
-      "src": "images/icons/android-chrome-72x72.png",
-      "sizes": "72x72",
+      "src": "img/144X144-icon.png",
+      "sizes": "144x144",
       "type": "image/png"
     }
   ]
