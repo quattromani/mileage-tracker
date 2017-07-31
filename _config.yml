@@ -1,10 +1,10 @@
 # Site settings
 title: Mileage Tracker
 email:
-url: https://mileage-tracker.com
-enforce_ssl: mileage-tracker.com
+url: https://quattromani.github.io/
+enforce_ssl: quattromani.github.io/mileage-tracker/
 description: A simple mileage tracker for leased vehicles
-baseurl: ""
+baseurl: "/mileage-tracker"
 logo: "logo.svg"
 version: 0.0.1
 url: ""
