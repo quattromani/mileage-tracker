@@ -1,52 +1,34 @@
-var cacheName = 'mileageTracker:001';
-var cacheFiles = [
+var dataCacheName = 'mileageData-v3';
+var cacheName = 'mileagePWA-final-3';
+var filesToCache = [
   '/',
   '/index.html',
   '/js/production.min.js',
   '/images/logo.svg'
 ];
 
-self.addEventListener('install', function(event) {
-  event.waitUntil(
-    caches.open(cacheName)
-      .then(function(cache) {
-        //console.log('Opened cache');
-        return cache.addAll(cacheFiles);
-      })
+self.addEventListener('install', function(e) {
+  console.log('[ServiceWorker] Install');
+  e.waitUntil(
+    caches.open(cacheName).then(function(cache) {
+      console.log('[ServiceWorker] Caching app shell');
+      return cache.addAll(filesToCache);
+    })
   );
 });
 
-self.addEventListener('fetch', function(event) {
-  event.respondWith(
-    caches.match(event.request)
-      .then(function(response) {
-        // Grab the asset from SW cache.
-        if (response) {
-          return response;
+self.addEventListener('activate', function(e) {
+  console.log('[ServiceWorker] Activate');
+  e.waitUntil(
+    caches.keys().then(function(keyList) {
+      return Promise.all(keyList.map(function(key) {
+        if (key !== cacheName && key !== dataCacheName) {
+          console.log('[ServiceWorker] Removing old cache', key);
+          return caches.delete(key);
         }
-        return fetch(event.request);
-    }).catch(function() {
-      // Can't access the network return an offline page from the cache
-      return caches.match('/offline/');
+      }));
     })
   );
-});
 
-
-// Empty out any caches that don’t match the ones listed.
-self.addEventListener('activate', function(event) {
-
-  var cacheWhitelist = ['mileageTracker:001'];
-
-  event.waitUntil(
-    caches.keys().then(function(cacheNames) {
-      return Promise.all(
-        cacheNames.map(function(cacheName) {
-          if (cacheWhitelist.indexOf(cacheName) === -1) {
-            return caches.delete(cacheName);
-          }
-        })
-      );
-    })
-  );
+  return self.clients.claim();
 });
