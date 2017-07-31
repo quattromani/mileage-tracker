@@ -9,25 +9,3 @@ layout: compress
 {% include footer.html %}
 
 {% include foot.html %}
-
-<script src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-
-<script>
-$(function() {
-  if($(window).width() >= mediumBreakPoint) {
-    $('.data-carousel').slick({
-      autoplay: true,
-      dots: false,
-      arrows: true,
-      infinite: true,
-      speed: 1200,
-      fade: true,
-      cssEase: 'linear'
-    });
-  } else {
-    $('.data-carousel').slick({
-      arrows: false
-    });
-  }
-});
-</script>
