@@ -12,7 +12,6 @@ permalink: manifest.json
   "description": "A simple mileage tracker for leased vehicles",
   "start_url": "/",
   "display": "{{ site.manifest_display }}",
-  "orientation": "{{ site.manifest_orientation }}",
   "background_color": "#{{ site.manifest_background_color }}",
   "theme_color": "#{{ site.manifest_theme_color }}",
   "icons": [
@@ -21,5 +20,7 @@ permalink: manifest.json
       "sizes": "144x144",
       "type": "image/png"
     }
-  ]
+  ],
+  "orientation": "{{ site.manifest_orientation }}",
 }
+

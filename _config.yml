@@ -3,7 +3,7 @@ title: Mileage Tracker
 email:
 url: https://mileage-tracker.com
 enforce_ssl: mileage-tracker.com
-description:
+description: A simple mileage tracker for leased vehicles
 baseurl:
 logo: "logo.svg"
 version: 0.0.1
@@ -46,7 +46,7 @@ google-maps-javascript-api-key:
 # Manifest
 manifest_lang: en
 manifest_name: Mileage Tracker
-manifest_short_name: Mileage Tracker
+manifest_short_name: Mileage
 manifest_description: 'A simple mileage tracker for leased vehicles'
 manifest_background_color: '37474f'
 manifest_theme_color: '37474f'
