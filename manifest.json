@@ -10,7 +10,7 @@ permalink: manifest.json
   "name": "{{ site.manifest_name }}",
   "short_name": "{{ site.manifest_short_name }}",
   "description": "A simple mileage tracker for leased vehicles",
-  "start_url": "/",
+  "start_url": "index.html",
   "display": "{{ site.manifest_display }}",
   "background_color": "#{{ site.manifest_background_color }}",
   "theme_color": "#{{ site.manifest_theme_color }}",
