@@ -1,5 +1,5 @@
-var dataCacheName = 'mileageData-v2';
-var cacheName = 'mileagePWA-final-2';
+var dataCacheName = 'mileageData-v3';
+var cacheName = 'mileagePWA-final-3';
 var filesToCache = [
   '/',
   '/index.html',
