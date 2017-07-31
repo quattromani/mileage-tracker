@@ -21,6 +21,6 @@ permalink: manifest.json
       "type": "image/png"
     }
   ],
-  "orientation": "{{ site.manifest_orientation }}",
+  "orientation": "{{ site.manifest_orientation }}"
 }
 
