@@ -8,5 +8,6 @@ search: exclude
 
 # Allow crawling of all content
 User-agent: *
-Sitemap: {{ site.baseurl | prepend: site.url }}/sitemap.xml
 Disallow:
+
+SITEMAP: https://quattromani.github.io/mileage-tracker/sitemap.xml
