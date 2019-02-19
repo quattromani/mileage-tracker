@@ -5,4 +5,6 @@ $hr-color-top: $color-dark-grey;
 $hr-color-bottom: lighten($color-brand-primary, 70%);
 
 $hr-strike-font-size: 20;
-$hr-strike-stroke: $color-light-grey;
+$hr-strike-stroke-color: currentColor;
+$hr-strike-stroke-size: 1px;
+$hr-strike-stroke-style: solid;

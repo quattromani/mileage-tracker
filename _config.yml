@@ -12,6 +12,9 @@ author: "Max Quattromani"
 
 # Build settings
 jquery-version: 3.1.1
+jquery-integrity: sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=
+
+# Fontawesome
 fontawesome-id: 4aa71f0649
 
 # Included Plugins (previously gems)
